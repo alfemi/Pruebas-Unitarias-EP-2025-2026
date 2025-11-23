@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Dictionary/Dictionary.iml" filepath="$PROJECT_DIR$/Dictionary/Dictionary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Merger/Merger.iml" filepath="$PROJECT_DIR$/Merger/Merger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Problemas de Pruebas Unitarias.iml" filepath="$PROJECT_DIR$/.idea/Problemas de Pruebas Unitarias.iml" />
+    </modules>
+  </component>
+</project>
