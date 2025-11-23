@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b053bc8-2846-450e-a28d-afa676f23351" name="Changes" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/Receipt/Receipt.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Receipt/Test/EmptyReceipt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Receipt/src/Exceptions/IsClosedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Receipt/src/Exceptions/IsEmpyException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Receipt/src/Receipt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5b053bc8-2846-450e-a28d-afa676f23351" name="Changes" comment="Implemented Receipt class." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +60,6 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/alefe/Library/CloudStorage/GoogleDrive-alefermim@gmail.com/.shortcut-targets-by-id/1--u6_V3jQ91LfRn5KEo6s7JCUpX_n8zX/Universidad/5to Año/1r Semestre/Enginyeria del Programari/Problemas de Pruebas Unitarias",
     "project.structure.last.edited": "Libraries",
@@ -119,11 +111,20 @@
       <option name="project" value="LOCAL" />
       <updated>1763896750993</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implemented Receipt class.">
+      <option name="closed" value="true" />
+      <created>1763917877050</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1763917877050</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Implemented Receipt class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Receipt class." />
   </component>
 </project>
