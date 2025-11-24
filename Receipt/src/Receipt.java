@@ -38,7 +38,7 @@ public class Receipt{
         for (List<String> strings : receipt) {
             BigDecimal pricePerUnit = new BigDecimal(strings.get(0));
             BigDecimal numUnits = new BigDecimal(strings.get(1));
-            if (strings.contains("C")) {
+            if (receipt.getLast().contains("C")) {
                 BigDecimal tax = new BigDecimal(receipt.getLast().get(2));
                 totalAmount = totalAmount.add(pricePerUnit.multiply(numUnits.multiply(tax)));
             } else {

@@ -54,7 +54,7 @@
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.AddLineTest.addMoreLinesTest.executor": "Run",
     "JUnit.AddLineTest.isEmptyExceptionTest.executor": "Run",
-    "JUnit.AddTaxTest.addTaxMoreLinesTest.executor": "Debug",
+    "JUnit.AddTaxTest.addTaxMoreLinesTest.executor": "Run",
     "JUnit.AddTaxTest.addTaxOneLineTest.executor": "Run",
     "JUnit.AddTaxTest.executor": "Debug",
     "JUnit.AddTaxTest.isClosedExceptionTest.executor": "Run",
@@ -94,7 +94,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AddTaxTest">
+  <component name="RunManager" selected="JUnit.AddTaxTest.addTaxMoreLinesTest">
     <configuration name="AddLineTest.addMoreLinesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Receipt" />
       <option name="PACKAGE_NAME" value="" />
@@ -157,8 +157,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AddTaxTest" />
         <item itemvalue="JUnit.AddTaxTest.addTaxMoreLinesTest" />
+        <item itemvalue="JUnit.AddTaxTest" />
         <item itemvalue="JUnit.AddTaxTest.isEmptyExceptionTest" />
         <item itemvalue="JUnit.AddLineTest.addMoreLinesTest" />
         <item itemvalue="JUnit.AddTaxTest.isClosedExceptionTest" />
@@ -227,15 +227,6 @@
           <url>file://$PROJECT_DIR$/Receipt/src/Receipt.java</url>
           <line>33</line>
           <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/Receipt/Test/AddTaxTest.java</url>
-          <line>26</line>
-          <properties class="AddTaxTest" method="addTaxMoreLinesTest">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

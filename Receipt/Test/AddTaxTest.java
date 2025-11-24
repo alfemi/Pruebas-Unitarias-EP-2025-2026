@@ -24,11 +24,11 @@ public class AddTaxTest {
     }
 
     @Test
-    void addTaxMoreLinesTest() throws IsEmptyException{
+    void addTaxMoreLinesTest() throws IsEmptyException {
         receipt.addLine(new BigDecimal("12.39"), 11);
         receipt.addTaxes(new BigDecimal("46.3565"));
 
-        assertEquals(new BigDecimal("560,23"), receipt.getTotal());
+        assertEquals(new BigDecimal("1338.47"), receipt.getTotal());
     }
 
     @Test
