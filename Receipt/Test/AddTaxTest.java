@@ -2,8 +2,6 @@ import Exceptions.IsClosedException;
 import Exceptions.IsEmptyException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.testng.annotations.BeforeTest;
-
 import java.math.BigDecimal;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

@@ -53,6 +53,7 @@
   "keyToString": {
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.AddLineTest.addMoreLinesTest.executor": "Run",
+    "JUnit.AddLineTest.executor": "Run",
     "JUnit.AddLineTest.isEmptyExceptionTest.executor": "Run",
     "JUnit.AddTaxTest.addTaxMoreLinesTest.executor": "Run",
     "JUnit.AddTaxTest.addTaxOneLineTest.executor": "Run",
@@ -79,10 +80,11 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/alefe/Library/CloudStorage/GoogleDrive-alefermim@gmail.com/.shortcut-targets-by-id/1--u6_V3jQ91LfRn5KEo6s7JCUpX_n8zX/Universidad/5to Año/1r Semestre/Enginyeria del Programari/Problemas de Pruebas Unitarias",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default"
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -94,12 +96,21 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AddTaxTest.addTaxMoreLinesTest">
-    <configuration name="AddLineTest.addMoreLinesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AddLineTest">
+    <configuration name="AddLineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Receipt" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AddLineTest" />
-      <option name="METHOD_NAME" value="addMoreLinesTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddLineTest.isEmptyExceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Receipt" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AddLineTest" />
+      <option name="METHOD_NAME" value="isEmptyExceptionTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -119,16 +130,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AddTaxTest" />
       <option name="METHOD_NAME" value="addTaxMoreLinesTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AddTaxTest.isClosedExceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Receipt" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AddTaxTest" />
-      <option name="METHOD_NAME" value="isClosedExceptionTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -157,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AddLineTest" />
+        <item itemvalue="JUnit.AddLineTest.isEmptyExceptionTest" />
         <item itemvalue="JUnit.AddTaxTest.addTaxMoreLinesTest" />
         <item itemvalue="JUnit.AddTaxTest" />
         <item itemvalue="JUnit.AddTaxTest.isEmptyExceptionTest" />
-        <item itemvalue="JUnit.AddLineTest.addMoreLinesTest" />
-        <item itemvalue="JUnit.AddTaxTest.isClosedExceptionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -219,16 +220,5 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="Implemented Receipt class." />
     <option name="LAST_COMMIT_MESSAGE" value="Implemented Receipt class." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Receipt/src/Receipt.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

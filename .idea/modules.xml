@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Dictionary/Dictionary.iml" filepath="$PROJECT_DIR$/Dictionary/Dictionary.iml" />
       <module fileurl="file://$PROJECT_DIR$/Merger/Merger.iml" filepath="$PROJECT_DIR$/Merger/Merger.iml" />
       <module fileurl="file://$PROJECT_DIR$/Receipt/Receipt.iml" filepath="$PROJECT_DIR$/Receipt/Receipt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TaskScheduling/TaskScheduling.iml" filepath="$PROJECT_DIR$/TaskScheduling/TaskScheduling.iml" />
     </modules>
   </component>
 </project>
