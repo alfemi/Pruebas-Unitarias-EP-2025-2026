@@ -1,55 +1,50 @@
 import Exceptions.IsClosedException;
-import Exceptions.IsEmpyException;
+import Exceptions.IsEmptyException;
 
 import java.math.BigDecimal;
+import java.math.MathContext;
+import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Receipt{
-    List<List<String>> receipt = new ArrayList<>();
+    private final List<List<String>> receipt = new ArrayList<>();
 
     public void addLine(BigDecimal pricePerUnit,  int numUnits) throws IsClosedException{
-            if (receipt.getLast().contains("C")){
-                throw new IsClosedException("Recibo cerrado.");
-            }
-            if (receipt.isEmpty()) {
-                receipt.add(new ArrayList<>());
-                receipt.getFirst().add(pricePerUnit.toString());
-                receipt.getFirst().add(String.valueOf(numUnits));
-            }
-            else {
-                receipt.add(new ArrayList<>());
-                receipt.getLast().add(pricePerUnit.toString());
-                receipt.getLast().add(String.valueOf(numUnits));
-            }
-
+        if (!receipt.isEmpty() && receipt.getLast().contains("C")){
+            throw new IsClosedException("Recibo cerrado.");
+        }
+        receipt.add(new ArrayList<>());
+        receipt.getLast().add(pricePerUnit.toString());
+        receipt.getLast().add(String.valueOf(numUnits));
     }
 
-    public void addTaxes(BigDecimal percent) throws IsClosedException, IsEmpyException {
+    public void addTaxes(BigDecimal percent) throws IsClosedException, IsEmptyException {
         if (receipt.isEmpty()) {
-            throw new IsEmpyException("Recibo vacío.");
+            throw new IsEmptyException("Recibo vacío.");
         }
         if (receipt.getLast().contains("C")){
             throw new IsClosedException("Recibo cerrado.");
         }
-        int totalAmount = Integer.parseInt(receipt.getLast().getFirst())  * Integer.parseInt(receipt.getLast().getLast());
-        int tax = Integer.parseInt(percent.toString()) / 100;
-        receipt.getLast().add(String.valueOf(totalAmount * tax));
+        receipt.getLast().add(String.valueOf(percent.multiply(new BigDecimal("0.01")).add(BigDecimal.ONE)));
         receipt.getLast().add("C");
     }
 
-    public BigDecimal getTotal() {
-        BigDecimal totalAmount = BigDecimal.ZERO;
+    public BigDecimal getTotal() throws IsEmptyException {
         if (receipt.isEmpty()) {
-            return totalAmount;
+            throw new IsEmptyException("Recibo vacío.");
         }
+        BigDecimal totalAmount = BigDecimal.ZERO;
         for (List<String> strings : receipt) {
             BigDecimal pricePerUnit = new BigDecimal(strings.get(0));
             BigDecimal numUnits = new BigDecimal(strings.get(1));
-            BigDecimal tax = new BigDecimal(strings.get(2));
-
-            totalAmount = totalAmount.add(pricePerUnit.multiply(numUnits.multiply(tax)));
+            if (strings.contains("C")) {
+                BigDecimal tax = new BigDecimal(receipt.getLast().get(2));
+                totalAmount = totalAmount.add(pricePerUnit.multiply(numUnits.multiply(tax)));
+            } else {
+                totalAmount = totalAmount.add(pricePerUnit.multiply(numUnits));
+            }
         }
-        return totalAmount;
+        return totalAmount.setScale(2, RoundingMode.HALF_UP);
     }
 }

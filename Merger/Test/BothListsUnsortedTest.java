@@ -7,7 +7,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-public class BothListUnsortedTest {
+public class BothListsUnsortedTest {
     private final Merger merger = new Merger();
     private List<Integer> list1, list2;
 

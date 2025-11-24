@@ -3,22 +3,10 @@ import java.util.List;
 
 public class Merger {
     public List<Integer> mergeSorted(List<Integer> list1, List<Integer> list2) throws IllegalArgumentException {
-        if (list1.isEmpty() && list2.isEmpty()){
-            return list1;
-        }
-        else if (list1.isEmpty()){
-            return list2;
-        }
-        else if (list2.isEmpty()) {
-            return list1;
-        }
-        else{
-            if  (!checkLists(list1, list2)){
-                throw new IllegalArgumentException("Las listas no cumplen con los requisitos");
-            }
-            else{
-                return sortedLists(list1, list2);
-            }
+        if (!checkLists(list1, list2)) {
+            throw new IllegalArgumentException("Las listas no cumplen con los requisitos");
+        } else {
+            return sortedLists(list1, list2);
         }
     }
 

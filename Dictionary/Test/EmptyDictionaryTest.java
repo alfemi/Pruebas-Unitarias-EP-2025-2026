@@ -1,4 +1,3 @@
-import Exceptions.AlreadyDefinedException;
 import Exceptions.NotDefinedException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

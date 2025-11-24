@@ -7,15 +7,15 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class EmptyListsTest {
+public class EmptyL1Test {
     private final Merger merger = new Merger();
     private List<Integer> list1, list2, correctResult;
 
     @BeforeEach
     public void initList() {
-        list1 = Collections.emptyList();
+        list1 = Arrays.asList(1,2,3);
         list2 = Collections.emptyList();
-        correctResult = Collections.emptyList();
+        correctResult = Arrays.asList(1,2,3);
     }
 
     @Test
